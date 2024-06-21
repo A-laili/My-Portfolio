@@ -8,15 +8,15 @@ You can view the live version of my portfolio here : https://my-portfolio-pied-o
 
 
 ## Features
-###Responsive Design: Optimized for various screen sizes including mobile, tablet, and desktop.
-###Interactive UI: Smooth navigation and transitions.
-###Project Showcase: Detailed descriptions and links to my projects.
-###About Me: Information about my background, skills, and experiences.
-###Contact Form: A form to reach out to me directly.
+### Responsive Design: Optimized for various screen sizes including mobile, tablet, and desktop.
+### Interactive UI: Smooth navigation and transitions.
+### Project Showcase: Detailed descriptions and links to my projects.
+### About Me: Information about my background, skills, and experiences.
+### Contact Form: A form to reach out to me directly.
 
 
-##Technologies Used
-###React.js: JavaScript library for building user interfaces.
-###HTML5 & CSS3: Markup and styling.
-###JavaScript: Logic and functionality.
-###Vercel: Deployment and hosting.
+## Technologies Used
+### React.js: JavaScript library for building user interfaces.
+### HTML5 & CSS3: Markup and styling.
+### JavaScript: Logic and functionality.
+### Vercel: Deployment and hosting.
