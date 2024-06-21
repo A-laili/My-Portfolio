@@ -4,7 +4,8 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 
 ## Live Demo
 You can view the live version of my portfolio here : https://my-portfolio-pied-one-65.vercel.app/
-![Uploading image.png…]()
+![image](https://github.com/A-laili/My-Portfolio/assets/147451080/15a979a8-ee8e-4cf0-bc69-c78a312b4b2c)
+
 
 ## Features
 ###Responsive Design: Optimized for various screen sizes including mobile, tablet, and desktop.
