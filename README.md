@@ -21,3 +21,8 @@ You can view the live version of my portfolio here : https://my-portfolio-pied-o
 ### HTML5 & CSS3: Markup and styling.
 ### JavaScript: Logic and functionality.
 ### Vercel: Deployment and hosting.
+
+
+
+## Author
+Asmaa Laili.
