@@ -18,6 +18,7 @@ You can view the live version of my portfolio here : https://my-portfolio-pied-o
 
 
 ## Technologies Used
+
 ### React.js: JavaScript library for building user interfaces.
 ### HTML5 & CSS3: Markup and styling.
 ### JavaScript: Logic and functionality.
