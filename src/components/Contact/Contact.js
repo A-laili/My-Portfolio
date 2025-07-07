@@ -45,21 +45,33 @@ function Contact() {
             {error && <Alert variant="danger">{error}</Alert>}
             <Form ref={formRef} onSubmit={handleSubmit}>
               <Form.Group controlId="formName" className="mb-3">
-                <Form.Label>Name</Form.Label>
-                <Form.Control name="user_name" type="text" placeholder="Enter your name" required />
+                <Form.Label style={{ color: "#be6adf" }}>Name</Form.Label>
+                <Form.Control name="user_name" type="text" placeholder="Enter your name" required style={{ color: "#fff", background: "#222", borderColor: "#444" }} />
               </Form.Group>
               <Form.Group controlId="formEmail" className="mb-3">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control name="user_email" type="email" placeholder="Enter your email" required />
+                <Form.Label style={{ color: "#be6adf" }}>Email address</Form.Label>
+                <Form.Control name="user_email" type="email" placeholder="Enter your email" required style={{ color: "#fff", background: "#222", borderColor: "#444" }} />
+              </Form.Group>
+              <Form.Group controlId="formSubject" className="mb-3">
+                <Form.Label style={{ color: "#be6adf" }}>Subject</Form.Label>
+                <Form.Control name="subject" type="text" placeholder="Subject" required style={{ color: "#fff", background: "#222", borderColor: "#444" }} />
               </Form.Group>
               <Form.Group controlId="formMessage" className="mb-3">
-                <Form.Label>Message</Form.Label>
-                <Form.Control name="message" as="textarea" rows={4} placeholder="Your message" required />
+                <Form.Label style={{ color: "#be6adf" }}>Message</Form.Label>
+                <Form.Control name="message" as="textarea" rows={4} placeholder="Your message" required style={{ color: "#fff", background: "#222", borderColor: "#444" }} />
               </Form.Group>
               <Button variant="primary" type="submit" disabled={sending}>
-                {sending ? "Sending..." : "Send"}
+                {sending ? "Sending..." : "Send A Message"}
               </Button>
             </Form>
+            <div style={{ marginTop: "2rem", color: "#ccc" }}>
+              <h4 style={{ color: "#be6adf" }}>Get in Touch</h4>
+              <p>
+                Whether you want to get in touch, talk about a project collaboration, or just say hi, I'd love to hear from you.
+                <br />
+                Simply fill the form and send me an email.
+              </p>
+            </div>
           </Col>
         </Row>
       </Container>

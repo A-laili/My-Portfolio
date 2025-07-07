@@ -3,10 +3,10 @@ import { Col, Row } from "react-bootstrap";
 import {
   SiVisualstudiocode,
   SiPostman,
-  SiSlack,
   SiVercel,
   SiMacos,
-  SiGithub, // add a similar tool icon
+  SiGithub,
+  SiFlutter, // add Flutter icon
 } from "react-icons/si";
 
 function Toolstack() {
@@ -26,6 +26,9 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons" title="Vercel">
         <SiVercel />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Flutter">
+        <SiFlutter />
       </Col>
     </Row>
   );
