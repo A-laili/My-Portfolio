@@ -9,6 +9,8 @@ import Resume from "./components/Resume/ResumeNew";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Element } from "react-scroll";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -26,19 +28,31 @@ function App() {
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
-        {/* Single page sections with ids for anchor navigation */}
-        <section id="home">
-          <Home />
-        </section>
-        <section id="about">
-          <About />
-        </section>
-        <section id="project">
-          <Projects />
-        </section>
-        <section id="resume">
-          <Resume />
-        </section>
+        <Element name="home">
+          <section id="home">
+            <Home />
+          </section>
+        </Element>
+        <Element name="about">
+          <section id="about">
+            <About />
+          </section>
+        </Element>
+        <Element name="project">
+          <section id="project">
+            <Projects />
+          </section>
+        </Element>
+        <Element name="resume">
+          <section id="resume">
+            <Resume />
+          </section>
+        </Element>
+        <Element name="contact">
+          <section id="contact">
+            <Contact />
+          </section>
+        </Element>
         <Footer />
       </div>
     </>

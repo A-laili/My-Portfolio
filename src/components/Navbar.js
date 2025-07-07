@@ -13,6 +13,7 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
+import { Link as ScrollLink } from "react-scroll";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -52,49 +53,74 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link href="#home" onClick={() => updateExpanded(false)}>
+              <ScrollLink
+                to="home"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="nav-link"
+                onClick={() => updateExpanded(false)}
+              >
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
+              </ScrollLink>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                href="#about"
+              <ScrollLink
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="nav-link"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
+              </ScrollLink>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                href="#project"
+              <ScrollLink
+                to="project"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="nav-link"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />{" "}
                 Projects
-              </Nav.Link>
+              </ScrollLink>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                href="#resume"
+              <ScrollLink
+                to="resume"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="nav-link"
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
+              </ScrollLink>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                href=""
-                target="_blank"
-                rel="noreferrer"
+              <ScrollLink
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="nav-link"
+                onClick={() => updateExpanded(false)}
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
+                Contact Me
+              </ScrollLink>
             </Nav.Item>
 
             <Nav.Item className="fork-btn">
